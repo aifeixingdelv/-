@@ -78,6 +78,7 @@ sudo snap install qtcreator-ros --classic
   <exec_depend>libqt4-dev</exec_depend>
   </package>
   ```
+* node中放节点cpp、src中放其它类型cpp、include中放头文件、ui中放gui文件、resource中放资源文件，具体可参考林果采摘项目qt代码
 * 以上操作, 在 x86_64 平台可以类比
 
 
