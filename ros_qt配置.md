@@ -23,7 +23,6 @@ sudo snap install qtcreator-ros --classic
 * ros包以下分出node、src、include、ui四个文件夹，另外CMakeLists.txt和package.xml需要注意
   
   ```cmake
-  CMakeLists.txt
   cmake_minimum_required(VERSION 2.8.0)
   project(ebox_qt_pkg)
 
@@ -63,7 +62,6 @@ sudo snap install qtcreator-ros --classic
   install(TARGETS ebox_mainwindow_node RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
   ```
   ```xml
-  package.xml
   <?xml version="1.0"?>
   <package format="2">
   <name>ebox_qt_pkg</name>
