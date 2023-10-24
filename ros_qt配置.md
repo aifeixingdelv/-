@@ -55,7 +55,7 @@ sudo snap install qtcreator-ros --classic
   QT5_WRAP_CPP(QT_MOC_HPP ${QT_MOC})
 
 
-  file(GLOB_RECURSE QT_SOURCES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} FOLLOW_SYMLINKS src/*.cpp)
+  file(GLOB_RECURSE QT_SOURCES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} FOLLOW_SYMLINKS src/*.cpp node/*.cpp)
 
   add_executable(ebox_mainwindow_node ${QT_SOURCES} ${QT_RESOURCES_CPP} ${QT_FORMS_HPP} ${QT_MOC_HPP} )
   target_link_libraries(ebox_mainwindow_node ${QT_LIBRARIES} ${catkin_LIBRARIES})
